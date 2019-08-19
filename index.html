@@ -7,8 +7,20 @@
     <title>morse</title>
   </head>
   <body>
-    <input id="englishInput" type="text" />
-    <p id="morseOuput"></p>
+    <input
+      onkeyup="handleEnglish()"
+      id="englishInput"
+      type="text"
+      placeholder="Write English here"
+    />
+    <p id="morseOutput"></p>
+    <input
+      onkeyup="handleMorse()"
+      id="morseInput"
+      type="text"
+      placeholder="Write Morse here"
+    />
+    <p id="englishOutput"></p>
   </body>
   <script src="./main.js"></script>
 </html>
