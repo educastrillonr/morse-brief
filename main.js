@@ -62,7 +62,6 @@ const translateEng = message => {
   let translation = "";
   for (let index = 0; index < message.length; index++) {
     translation += morseRef[message.toLowerCase().charAt(index)] + " ";
-    // console.log();
   }
   return translation.substring(0, translation.length - 1);
 };
@@ -76,7 +75,6 @@ const translateMor = message => {
       char += message.toLowerCase().charAt(index);
     } else {
       translation += Object.keys(morseRef).find(key => morseRef[key] === char);
-      // console.log());
       char = "";
     }
   }
@@ -88,10 +86,5 @@ const translateMor = message => {
     translation.substring(1, translation.length)
   );
 };
-
-translateEng("Never gonna give you up");
-translateMor(
-  "-. . ...- . .-. / --. --- -. -. .- / --. .. ...- . / -.-- --- ..- / ..- .--."
-);
 
 module.exports = { translateEng, translateMor };

@@ -4,9 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css" />
     <title>morse</title>
   </head>
   <body>
+    <header>
+      <h1>Morse Translator</h1>
+      <p>
+        As you write in the boxes below, you will get the translation to / from
+        morse. For readability purposes, a "/" will indicate a space between
+        words. For example: "Hello world" -> ".... . .-.. .-.. --- / .-- --- .-.
+        .-.. -.."
+      </p>
+    </header>
     <input
       onkeyup="handleEnglish()"
       id="englishInput"
