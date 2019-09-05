@@ -4,7 +4,7 @@ Link: http://morse.educastrillon.xyz/
 
 One of the exercises done at nology. I had a few hours to create a website that would translate from English to morse and vice versa using TDD.
 
-Tech used: 
+## Tech 
 - HTML
 - JavaScript
 - CSS
